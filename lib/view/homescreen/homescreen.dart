@@ -1,7 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:project_twitter/color_constant.dart';
+
+import 'package:project_twitter/utils/color_constant.dart';
 import 'package:project_twitter/utils/comment_db.dart';
 
 import 'package:project_twitter/utils/twitter_db.dart';
@@ -18,9 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold
-      
-      (appBar: AppBar(
+      child: Scaffold(
+      appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: InkWell(onTap: () => 
@@ -36,6 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Image.asset("assets/Feature stroke icon.png"),
         )],
       ),
+        
+      
          body: ListView.builder(
           itemCount: 10,
           
@@ -189,15 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
          )
           
 
-         ),bottomNavigationBar: BottomNavigationBar(
-          items: [
-          BottomNavigationBarItem(icon: Image.asset("assets/Home Solid Icon.png"),label: "" ),
-          BottomNavigationBarItem(icon:Image.asset("assets/Search Stroke Icon.png"),label: "" ),
-          BottomNavigationBarItem(icon:Image.asset("assets/Bell Stroke Icon.png"),label: "" ),
-          BottomNavigationBarItem(icon:Image.asset("assets/Mail Stroke Icon.png"),label: "" ),
-          
-          
-         ]),
+         ),
          floatingActionButton: FloatingActionButton(
           child: Image.asset("assets/Add text icon (1).png"),
           backgroundColor: Color(0xff4C9EEB),

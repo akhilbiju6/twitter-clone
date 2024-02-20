@@ -47,7 +47,56 @@ class _AccountScreenState extends State<AccountScreen> {
             ],
           ),
           ListTile(
-            title: Image.asset(""),
+            leading: Image.asset("assets/Profile Stroke Icon.png"),
+            title: Text("Profile",style: TextStyle(
+              fontWeight: FontWeight.bold
+            ),),
+
+          ),SizedBox(height: 10,),
+          ListTile(
+            leading: Image.asset("assets/Lists icon.png"),
+            title: Text("Lists",style: TextStyle(
+              fontWeight: FontWeight.bold
+            ),),
+
+          ),SizedBox(height: 10,),
+          ListTile(
+            leading: Image.asset("assets/Topics Stroke Icon (1).png"),
+            title: Text("Topics",style: TextStyle(
+              fontWeight: FontWeight.bold
+            ),),
+
+          ),SizedBox(height: 10,),
+          ListTile(
+            leading: Image.asset("assets/Bookmarks icon (1).png"),
+            title: Text("Bookmarks",style: TextStyle(
+              fontWeight: FontWeight.bold
+            ),),
+
+          ),SizedBox(height: 10,),
+          ListTile(
+            leading: Image.asset("assets/Moments icon (1).png"),
+            title: Text("Moments",style: TextStyle(
+              fontWeight: FontWeight.bold
+            ),),
+
+          ),SizedBox(height: 20,),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Text("Settings and Privacy"),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Text("Help Center"),
+              ],
+            ),
           )
 
         ],
